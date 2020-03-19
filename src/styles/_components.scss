@@ -1,0 +1,19 @@
+
+/* Buttons */
+
+.btn {
+    transition: all .3s ease-out;
+}
+
+.btn-sm-igeo {
+    padding: .5625rem 1.5625rem;
+    font-size: .8125rem;
+    line-height: 1.5;
+    border-radius: .3125rem;
+}
+
+/* Checks */
+
+.container_check input:checked ~ .checkmark {
+    background-color: $primary-green;
+}

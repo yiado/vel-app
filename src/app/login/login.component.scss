@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+h1 {
+    color: $primary-grey;
+    margin-top: 2rem;
+    line-height: 3.75rem;
+    font-size: 2.375rem;
+}
+
+.legend {
+    font-size: .6875rem;
+    margin-top: 1.875rem
+}
+
+.cont-btn {
+    margin-top: 1.875rem;
+}
