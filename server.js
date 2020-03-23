@@ -1,4 +1,4 @@
-const path = require('path');
+/*const path = require('path');
 const express = require('express');
 const app = express();
 
@@ -32,4 +32,12 @@ app.get('/*', function(req, res) {
 
 // Start the app by listening on the default
 // Heroku port
-app.listen(process.env.PORT || 443);
+app.listen(process.env.PORT || 443);*/
+var express = require('express');
+var app = express();
+app.get('/',function(res,req){
+  res.send('Hello world(test2)!\n');
+})
+var port = 80;
+app.listen(port);
+console.log('Listening on port', port);
