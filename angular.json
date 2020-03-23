@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "igeo-app"
+    }
+  },
+  "defaultProject": "igeo-app",
+  "cli": {
+    "analytics": false
+  }
 }
