@@ -20,7 +20,7 @@
                         <div class="col">
                             <img src="igeo-app/assets/img/logo.png" alt="">
                             <h1>
-                                Bienvenido a Igeo. Favor ingresar a su cuenta
+                                Bienvenido a Igeo. Favor Registre su cuenta
                             </h1>
                         </div>
                     </div>
@@ -28,24 +28,21 @@
                     <form id="wrapped" method="POST">
                     
                                 <div class="form-group">
+                                    <label for="username">*Nombre</label>
+                                    <input type="name" name="name" class="form-control required" placeholder="Escriba su correo electrónico" [(ngModel)]="addRegister.name">
+                                </div>
+                                <div class="form-group">
                                     <label for="username">*Usuario</label>
-                                    <input type="email" name="email" class="form-control required" placeholder="Escriba su correo electrónico" [(ngModel)]="loguear.email">
+                                    <input type="email" name="email" class="form-control required" placeholder="Escriba su correo electrónico" [(ngModel)]="addRegister.email">
                                 </div>
                                 <div class="form-group">
                                     <label for="username">*Contraseña</label>
-                                    <input type="password" name="password" class="form-control required" placeholder="Escriba su contraseña" [(ngModel)]="loguear.password">
+                                    <input type="password" name="password" class="form-control required" placeholder="Escriba su contraseña" [(ngModel)]="addRegister.password">
                                 </div>
                                 <!-- /row -->
-                                <div class="form-group terms">
-                                    <label class="container_check d-inline-block">Recordar clave 
-                                        <input type="checkbox" name="terms" value="Yes" class="required">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <a href="#" class="d-inline-block float-right">Olvidó su clave</a>
-                                </div>
                                 <div class="form-group cont-btn">
-                                    <button class="btn btn-success btn-sm-igeo mr-2" (click)="login()">Ingresar</button> 
-                                    <button class="btn btn-outline-secondary btn-sm-igeo" [routerLink]="['/register']">Solicitar acceso</button>
+                                    <button class="btn btn-success btn-sm-igeo mr-2" (click)="register()">Registrar</button> 
+                                    <button class="btn btn-outline-secondary btn-sm-igeo" [routerLink]="['/login']">Volver</button>
                                 </div>
                                 <div class="form-group legend">
                                     Al ingresar usted acepta los <a href="#">términos y condiciones de la plataforma</a>

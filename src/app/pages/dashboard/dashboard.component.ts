@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
+  loggenIn = false;
+  loggedUser:any = null;
+  constructor(private authService: AuthService) { 
+    this.authService.getStatus()
+    .subscribe((result)=>{
+      if(result && result.uid){
+        this.loggenIn = true;
+        setTimeout(()=>{
+          this.loggedUser = this.authService.getUser().currentUser.email;
+        }, 500);
+      } else {
+        this.loggenIn = false;
+      }
+    }, (error)=>{
+      this.loggenIn = false;
+    });
+  }
 
   ngOnInit() {
+  }
+  
+  logOut(){
+    this.authService.logOut();
   }
 
 }

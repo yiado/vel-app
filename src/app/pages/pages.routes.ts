@@ -1,6 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GuardService } from '../services/guard.service';
+
 
 
 const pagesRoutes: Routes = [
@@ -9,7 +11,7 @@ const pagesRoutes: Routes = [
         component: PagesComponent,
         children: [
             // { path: '', component: PagesComponent },
-            { path: 'dashboard', component: DashboardComponent },
+            { path: 'dashboard', component: DashboardComponent, /*canActivate:[GuardService]*/ },
             { path: '', redirectTo: '/login', pathMatch: 'full' }
         ]
     }
