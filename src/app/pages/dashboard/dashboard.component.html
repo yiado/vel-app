@@ -1,1 +1,7 @@
-<p>dashboard works!</p>
+<div class="jumbotron">
+    <h1 class="display-4">Bienvenido a IGEO!</h1>
+    <p class="lead">IGEO EN COSTRUCCION...</p>
+    <hr class="my-4">
+    <p>Próximamente te contactaremos a {{loggedUser}}</p>
+    <a class="btn btn-success btn-lg" href="#" role="button" (click)="logOut()" *ngIf="loggenIn">Salir</a>
+  </div>

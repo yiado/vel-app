@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -7,14 +8,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
-  constructor(private router:Router) { }
+  loguear:any = {};
+  //operation: string = 'login';
+  //email: string = null;
+  //password: string = null;
+  constructor(private router:Router, private authService: AuthService) { 
+    //this.authService.login('email','password');
+  }
 
   ngOnInit() {
   }
   
   login(){
-    alert('User logueado');
-    this.router.navigate(['dashboard']);
+    this.authService.loginEmail(this.loguear.email, this.loguear.password);
   }
 }
