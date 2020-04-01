@@ -1,0 +1,48 @@
+@import '../../../styles/variables';
+
+.fix-header .topbar {
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.topbar {
+    background: #FFF;
+    z-index: 50;
+}
+
+.navbar-igeo {
+    margin-left: 2.5rem;
+    .nav-link {
+        width: 120px;
+        text-align: center;
+    }
+    .nav-item {
+        &:hover {
+            a, i {
+                color: $secondary-orange;
+            }
+        }
+    }
+
+    .nav-item.active {
+        a, i {
+            color: $secondary-orange;
+        }
+    }
+}
+
+.navbar-user {
+    .nav-item {
+        a, i {
+            color: $primary-green;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-igeo {
+        margin-left: 2.5rem;
+    }
+}

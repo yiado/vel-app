@@ -1,5 +1,23 @@
-<!--<app-header></app-header>
+<div id="main-wrapper">
+    <!-- Header -->
+    <app-header></app-header>
+    <!-- Header -->
+    <!-- Sidebar -->
+    <app-sidebar></app-sidebar>
+    <!-- end. Sidebar -->
+    
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumb -->
+            <app-breadcrumb></app-breadcrumb>
+            <!-- end. Breadcrumb -->
 
-<app-sidebar></app-sidebar>-->
+            <!-- Content -->
+            <router-outlet></router-outlet>
+            <!--end. Content -->
+        </div>
+    </div>
+</div>
 
-<router-outlet></router-outlet>
+
+

@@ -17,3 +17,25 @@
 .container_check input:checked ~ .checkmark {
     background-color: $primary-green;
 }
+
+
+/* Header */
+
+header {
+    padding: 30px 0;
+}
+
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+}

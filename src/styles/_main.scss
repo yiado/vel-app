@@ -14,3 +14,21 @@ body {
     background-position: 0 0;
     background-size: cover;
 }
+
+#main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-wrapper {
+    background: #f4f6f9;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+
+@media (min-width: 1024px) {
+    .page-wrapper {
+        margin-left: 240px;
+    }
+}
