@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.breadcrumb {
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6875rem;
+    padding: 1.25rem;
+    padding-left: 0.25rem;
+    a {
+        color: $primary-grey;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.breadcrumb-item {
+    &.active {
+        color: $primary-orange;
+    }
+}

@@ -6,7 +6,7 @@ body {
 }
 
 #start {
-    background-color: #fff;
+    background-color: $primary-light;
 }
 
 .content-left-wrapper {
@@ -21,7 +21,7 @@ body {
 }
 
 .page-wrapper {
-    background: #f4f6f9;
+    background: $primary-light;
     padding-bottom: 60px;
     position: relative;
 }

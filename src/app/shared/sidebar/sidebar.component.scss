@@ -15,4 +15,58 @@
     background: #fff;
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-sidebar {
+    .node-list {
+
+    }
+    .node {
+        margin: 0;
+        padding: 20px 0;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        &:hover {
+            background-color: $primary-orange-50;
+        }
+        &.active {
+            background-color: $primary-orange;
+            color: $primary-light;
+        }
+    }
+    .node-data {
+        padding: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        span {
+            display: block;
+        }
+        .node-name {
+            font-weight: 700;
+        }
+        .node-address {
+            margin-left: 16px;
+        }
+    }
+
+    .sub-node-list {
+    }
+    .sub-node {
+        padding: 10px;
+        padding-left: 36px;
+        transition: background-color .3s ease-out;
+        &:hover {
+            background-color: $primary-light-20;
+        }
+    }
+
+    .footer-sidebar {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 10px;
+    }
 }
