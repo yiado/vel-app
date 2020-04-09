@@ -1,0 +1,89 @@
+@import '../../../styles/variables';
+
+/* Top Banner */
+.banner {
+    background-image: url('../../../assets/img/banner-institucion.png');
+    background-position: 0 0;
+    background-size: cover;
+    height: 234px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-right: 0;
+    color: $primary-light;
+    h1 {
+        font-size: 2.2rem;
+        color: $primary-light;
+        font-weight: 600;
+        min-width: 24rem;
+        padding-right: 1rem;
+    }
+    hr {
+        border-top: 1px solid $primary-light-20;
+        width: 100%;
+    }
+}
+.cont-qr {
+    margin-right: 1.5rem;
+}
+
+/* Vineta */
+.vineta {
+    padding: 20px 2rem;
+    color: $primary-grey;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    i {
+        margin-right: .4rem;
+        font-size: 1rem;
+    }
+    span {
+        font-size: 0.625rem;
+    }
+}
+
+/* Card Stats */
+
+.card-stats {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Card Places */
+
+.card-place {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    h5 {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $secondary-grey;
+        text-transform: uppercase;
+    }
+    hr {
+        margin-top: 0;
+        border: 2px solid $border-grey;
+        width: 22px;
+        margin-bottom: 1rem;
+
+    }
+    .img-place {
+        height: 110px;
+        overflow-y: hidden;
+    }
+    .card-text {
+        font-size: 0.875rem;
+    }
+    .card-footer {
+        background-color: transparent;
+        border-top: 1px solid $border-grey;
+        font-size: 0.6875rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    i {
+        font-size: .8rem;
+        color: $secondary-grey;
+    }
+}
