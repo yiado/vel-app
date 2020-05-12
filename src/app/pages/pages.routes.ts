@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { GuardService } from '../services/guard.service';
+// import { GuardService } from '../services/guard/guard.service';
 
 
 

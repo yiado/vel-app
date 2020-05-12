@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { ServicesModule } from '../services/services.module';
 
 @Component({
   selector: 'app-pages',
@@ -8,7 +8,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class PagesComponent implements OnInit {
 
-  constructor(private authService:AuthService) {}
+  constructor( private authService: ServicesModule ) {}
 
   ngOnInit() {
   }

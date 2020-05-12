@@ -1,8 +1,8 @@
 <aside class="left-sidebar">
-    <ul class="node-list">
+<!--     <ul class="node-list">
         <li class="node active">
             <div class="node-data">
-                <span class="node-name">
+                <span class="node-name" [routerLink]="['/dashboard']" routerLinkActive="active" >
                     <i class="fas fa-university"></i>
                     Campus 1
                 </span>
@@ -34,6 +34,25 @@
                 </span>
                 <span class="node-address">Blanco Encalada 2020</span>
             </div>
+        </li>
+    </ul> -->
+
+    <ul class="node-list">
+        <li class="node"  routerLinkActive="active" *ngFor="let menu of sidebar.menu">
+            <div class="node-data">
+                <span class="node-name" [routerLink]="[menu.url]">
+                    <i [class]="menu.icono"></i>
+                    {{ menu.propiedad }}
+                </span>
+                <span class="node-address">{{ menu.direccion }}</span>
+            </div>
+            <ul class="sub-node-list">
+                <li class="sub-node" routerLinkActive="active" *ngFor="let submenu of menu.submenu">
+                    <span class="sub-node-data" [routerLink]="['submenumenu.url']">
+                        {{ submenu.subpropiedad }}
+                    </span>
+                </li>
+            </ul>
         </li>
     </ul>
     <div class="footer-sidebar">
