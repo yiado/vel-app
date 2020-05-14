@@ -1,6 +1,5 @@
 @import '../../../styles/variables';
 
-
 .fix-sidebar .left-sidebar {
     position: fixed;
 }
@@ -12,13 +11,14 @@
     top: 0px;
     z-index: 20;
     margin-top: 100px;
-    background: #fff;
-    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    background: $primary-light;
+   /*  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08); */
     font-family: 'Poppins', sans-serif;
 }
 
 .left-sidebar {
+    transition: all .3s ease-out;
     .node-list {
 
     }
@@ -47,6 +47,7 @@
         }
         .node-address {
             margin-left: 16px;
+            font-size: 0.7rem;
         }
     }
 
@@ -62,10 +63,9 @@
     }
 
     .footer-sidebar {
-        position: absolute;
+        position: fixed;
         bottom: 0;
-        right: 0;
-        left: 0;
+        left: 62px;
         text-align: center;
         padding: 10px;
     }

@@ -1,42 +1,7 @@
 <aside class="left-sidebar">
-<!--     <ul class="node-list">
-        <li class="node active">
-            <div class="node-data">
-                <span class="node-name" [routerLink]="['/dashboard']" routerLinkActive="active" >
-                    <i class="fas fa-university"></i>
-                    Campus 1
-                </span>
-                <span class="node-address">Blanco Encalada 2020</span>
-            </div>
-            <ul class="sub-node-list">
-                <li class="sub-node">
-                    <span class="sub-node-data">
-                        Propiedad 1
-                    </span>
-                </li>
-                <li class="sub-node">
-                    <span class="sub-node-data">
-                        Propiedad 1
-                    </span>
-                </li>
-                <li class="sub-node">
-                    <span class="sub-node-data">
-                        Propiedad 1
-                    </span>
-                </li>
-            </ul>
-        </li>
-        <li class="node">
-            <div class="node-data">
-                <span class="node-name">
-                    <i class="fas fa-university"></i>
-                    Campus 2
-                </span>
-                <span class="node-address">Blanco Encalada 2020</span>
-            </div>
-        </li>
-    </ul> -->
-
+    <button type="button" class="btn-collapse">
+        <i class="far fa-angle-right"></i>
+    </button>
     <ul class="node-list">
         <li class="node"  routerLinkActive="active" *ngFor="let menu of sidebar.menu">
             <div class="node-data">
@@ -48,7 +13,7 @@
             </div>
             <ul class="sub-node-list">
                 <li class="sub-node" routerLinkActive="active" *ngFor="let submenu of menu.submenu">
-                    <span class="sub-node-data" [routerLink]="['submenumenu.url']">
+                    <span class="sub-node-data" [routerLink]="[submenu.url]">
                         {{ submenu.subpropiedad }}
                     </span>
                 </li>
